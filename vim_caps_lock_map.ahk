@@ -9,12 +9,15 @@ n::PgDn
 u::PgUp
 i::Home
 o::End
+p::PrintScreen
+å::ScrollLock
+Backspace::Delete
 #HotIf
 
 *CapsLock::
-{ ; V1toV2: Added bracket
+{
 KeyWait("CapsLock")
 if (A_ThisHotkey = "*CapsLock")
 	Send("{Escape}")
 Return
-} ; V1toV2: Added bracket in the end
+}
